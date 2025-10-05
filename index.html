@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moaz Tarek | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9d6d8f5.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #101218; /* غامق */
+      color: #e0e0e0;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00d4a6;
+    }
+
+    header h3 {
+      font-weight: 400;
+      color: #b0b0b0;
+      margin-top: 5px;
+    }
+
+    section {
+      padding: 10px 0;
+    }
+
+    h2 {
+      color: #00d4a6;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-left: 4px solid #00d4a6;
+      padding-left: 10px;
+    }
+
+    p, ul, li {
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: disc inside;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .skills-grid div {
+      background-color: #181a1f;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #222;
+      font-weight: 500;
+      font-size: 0.85rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skills-grid div:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,212,166,0.2);
+    }
+
+    a {
+      color: #00d4a6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #contact p {
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 20px;
+      border-top: 1px solid #222;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Moaz Tarek Ahmed</h1>
+      <h3>Junior Software Developer | Data Analyst Intern</h3>
+    </header>
+
+    <section id="about">
+      <h2><i class="fas fa-user"></i> About Me</h2>
+      <p>
+        Motivated and detail-oriented Computer Engineering student with a strong interest in software development and data analysis.
+        Skilled in problem-solving, programming, and logical thinking, with hands-on experience from academic and self-learning projects.
+        Eager to apply technical knowledge in real-world applications and continue learning in dynamic, growth-oriented environments.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2><i class="fas fa-code"></i> Technical Skills</h2>
+      <div class="skills-grid">
+        <div>Python</div>
+        <div>C++</div>
+        <div>SQL</div>
+        <div>Excel</div>
+        <div>Power BI</div>
+        <div>Pandas / NumPy</div>
+        <div>Git & GitHub</div>
+        <div>Jupyter Notebook</div>
+      </div>
+    </section>
+
+    <section id="soft-skills">
+      <h2><i class="fas fa-people-arrows"></i> Soft Skills</h2>
+      <ul>
+        <li>Strong problem-solving and analytical thinking</li>
+        <li>Teamwork and collaboration</li>
+        <li>Time management and adaptability</li>
+        <li>Effective communication</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+      <p>
+        <strong>Front-End Development Practice Projects:</strong><br>
+        Built several responsive websites using HTML, CSS, and JavaScript as part of self-learning and university practice.
+        Developed simple landing pages, portfolio layouts, and interactive web components to enhance understanding of front-end fundamentals.
+      </p>
+    </section>
+
+    <section id="courses">
+      <h2><i class="fas fa-graduation-cap"></i> Courses & Certifications</h2>
+      <ul>
+        <li>Python Programming (Self-learning / Online Course)</li>
+        <li>Data Analysis Fundamentals (Excel, Power BI, Python)</li>
+        <li>Front-End & Back-End Web Development (HTML, CSS, JavaScript, Databases)</li>
+        <li>C++ Programming & Data Structures</li>
+        <li>Networking Basics (CCNA Introduction)</li>
+        <li>Git & GitHub for Developers</li>
+        <li>CS50 Introduction to Computer Science</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <p>
+        📍 Port Said, Egypt<br>
+        📞 +20 120 437 7542<br>
+        📧 <a href="mailto:moaz.tarek30@gmail.com">moaz.tarek30@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/moaz-tarek-32180424b" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Moaz Tarek — All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
